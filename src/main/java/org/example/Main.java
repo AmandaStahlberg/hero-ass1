@@ -2,17 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Hero hero = new Warrior("Hero Warrior");
-        System.out.println(hero.toString());
 
         Hero mage = new Mage("Hero Mage");
-        System.out.println(mage.toString());
-
-        Hero ranger = new Ranger("Hero Ranger");
-        System.out.println(ranger.toString());
-
-        Hero rouge = new Rouge("Hero Rouge");
-        System.out.println(rouge.toString());
+        mage.levelUp();
+        mage.levelUp();
+        Weapon wand = new Weapon("NAME", 1, WeaponType.WAND, 10 );
+        Armor test = new Armor("testArmor", 2,  Slot.BODY ,ArmorType.CLOTH, new Attributes(1,1,5));
+        mage.equipWeapon(wand);
+        mage.displayDetailsOfHero();
 
     }
 }
