@@ -10,5 +10,8 @@ public class Ranger extends Hero{
         super.levelUp();
         this.addAttributes(1,5,1);
         addValidWeaponType(WeaponType.BOW);
+
+        addValidArmorType(ArmorType.LEATHER);
+        addValidArmorType(ArmorType.MAIL);
     }
 }

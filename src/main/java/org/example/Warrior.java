@@ -12,5 +12,8 @@ public class Warrior extends Hero {
         addValidWeaponType(WeaponType.AXE);
         addValidWeaponType(WeaponType.HAMMER);
         addValidWeaponType(WeaponType.SWORD);
+
+        addValidArmorType(ArmorType.MAIL);
+        addValidArmorType(ArmorType.PLATE);
     }
 }

@@ -11,5 +11,8 @@ public class Rouge extends Hero{
         this.addAttributes(1,4,1);
         addValidWeaponType(WeaponType.DAGGER);
         addValidWeaponType(WeaponType.SWORD);
+
+        addValidArmorType(ArmorType.LEATHER);
+        addValidArmorType(ArmorType.MAIL);
     }
 }

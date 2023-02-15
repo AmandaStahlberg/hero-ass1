@@ -11,5 +11,7 @@ public class Mage extends Hero {
         this.addAttributes(1,1,5);
         addValidWeaponType(WeaponType.WAND);
         addValidWeaponType(WeaponType.STAFF);
+
+        addValidArmorType(ArmorType.CLOTH);
     }
 }
