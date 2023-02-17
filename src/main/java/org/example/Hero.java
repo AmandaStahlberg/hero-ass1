@@ -113,9 +113,10 @@ public abstract class Hero {
     }
     public double getDamage() {
         double weaponDamage = 1;
-        if(equipment.get(Slot.WEAPON) != null)
+        if(getWeapon() != null) {
             weaponDamage = ((Weapon)equipment.get(Slot.WEAPON)).getWeaponDamage();
-        return weaponDamage * (1 + (getDamagingAttribute(getAttributes())/100d));
+            return weaponDamage * (1 + (getDamagingAttribute(getAttributes())/100d));
+        } return weaponDamage;
     }
 
     protected abstract int getDamagingAttribute(Attributes totalAttributes);
@@ -123,7 +124,7 @@ public abstract class Hero {
         return String.format("Strength: %s \nDexterity: %s \nIntelligence: %s", this.levelAttributes.getStrength(), this.levelAttributes.getDexterity(), this.levelAttributes.getIntelligence() );
     }
     public void displayDetailsOfHero(){
-        System.out.printf("Hero of type: %s \nName: %s \nLevel: %s \n%s \nDamage: \n Picked Weapon: %s\n", this.typeOfHero, this.name, this.level, this.printLevelAttributes(), this.getWeapon());
+        System.out.printf("Hero of type: %s \nName: %s \nLevel: %s \n%s \nDamage: %s\n Picked Weapon: %s\n", this.typeOfHero, this.name, this.level, this.printLevelAttributes(), this.getDamage(), this.getWeapon());
     }
 
 

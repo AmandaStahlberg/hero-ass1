@@ -2,7 +2,7 @@ package org.example;
 
 public class Weapon extends Item {
     private WeaponType weaponType;
-    private int weaponDamage;
+    private int weaponDamage = 1;
 
     public Weapon(String name, int requiredLevel, WeaponType weaponType, int weaponDamage) {
         super(name, requiredLevel, Slot.WEAPON);
