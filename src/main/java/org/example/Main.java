@@ -3,7 +3,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Hero mage = new Mage("Hero Mage");
+        Hero mage = new Mage("Mage");
         mage.displayDetailsOfHero();
         mage.levelUp();
         System.out.println(mage.getDamagingAttribute(mage.getAttributes()));
@@ -15,7 +15,7 @@ public class Main {
         mage.displayDetailsOfHero();
         Weapon wand2 = new Weapon("NAME", 1, WeaponType.STAFF, 10 );
         mage.equipWeapon(wand2);
-        mage.displayDetailsOfHero();
+        System.out.println(mage.displayDetailsOfHero());
 
     }
 }

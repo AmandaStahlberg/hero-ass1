@@ -12,7 +12,7 @@ public class Ranger extends Hero{
     @Override
     public void levelUp() {
         super.levelUp();
-        this.addAttributes(1,5,1);
+        this.addAttributes(1,7,1);
 
     }
 

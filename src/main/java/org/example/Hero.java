@@ -121,11 +121,18 @@ public abstract class Hero {
     }
 
     protected abstract int getDamagingAttribute(Attributes totalAttributes);
-    public String printLevelAttributes() {
-        return String.format("Strength: %s \nDexterity: %s \nIntelligence: %s", this.levelAttributes.getStrength(), this.levelAttributes.getDexterity(), this.levelAttributes.getIntelligence() );
-    }
-    public void displayDetailsOfHero(){
-        System.out.printf("Hero of type: %s \nName: %s \nLevel: %s \n%s \nDamage: %s\n Picked Weapon: %s\n", this.typeOfHero, this.name, this.level, this.printLevelAttributes(), this.getDamage(), this.getWeapon());
+
+    public String displayDetailsOfHero(){
+        String detailString = "Details of Hero: ";
+        String nameString = "Name: " + this.name;
+        String classString = "Class: " + this.typeOfHero;
+        String levelString = "Level: " + this.level;
+        String heroAttributesString = "TotalStrength: " + getAttributes().getStrength() + "\n" +
+                "TotalDexterity: " + getAttributes().getDexterity() + "\n" +
+                "TotalIntelligence: " + getAttributes().getIntelligence() ;
+        String damageString=  "Damage: " + getDamage();
+        String str = detailString + "\n" + nameString + "\n" + classString  + "\n" + levelString  + "\n" + heroAttributesString + "\n" + damageString;
+        return str;
     }
 
 
