@@ -13,6 +13,9 @@ public class Main {
         mage.equipWeapon(wand);
         mage.equipArmor(test);
         mage.displayDetailsOfHero();
+        Weapon wand2 = new Weapon("NAME", 1, WeaponType.STAFF, 10 );
+        mage.equipWeapon(wand2);
+        mage.displayDetailsOfHero();
 
     }
 }

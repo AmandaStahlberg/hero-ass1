@@ -112,11 +112,12 @@ public abstract class Hero {
            equipment.put(armor.getSlot(), armor);
     }
     public double getDamage() {
-        double weaponDamage = 1;
+        double damage = 1;
         if(getWeapon() != null) {
-            weaponDamage = ((Weapon)equipment.get(Slot.WEAPON)).getWeaponDamage();
-            return weaponDamage * (1 + (getDamagingAttribute(getAttributes())/100d));
-        } return weaponDamage;
+            damage = (getWeapon().getWeaponDamage());
+        return damage * (1 + (getDamagingAttribute(getAttributes())/100d));
+        }
+        return damage;
     }
 
     protected abstract int getDamagingAttribute(Attributes totalAttributes);
