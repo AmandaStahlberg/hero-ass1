@@ -11,6 +11,7 @@ This assignment requires you to create classes and methods for an Action RPG gam
 * Heroes can equip weapons and armor, and each has a required level and slot.
 * Weapon types include Axe, Bow, Dagger, Hammer, Staff, Sword, and Wand.
 * Armor types include Cloth, Leather, Mail, and Plate.
+
 The assignment also includes detailed instructions for each aspect of the hero select screen. Please see below for a more comprehensive breakdown of each requirement.
 
 ## Hero Attributes
@@ -25,4 +26,4 @@ The final requirement of this assignment is to create an abstract `Item` class f
 Heroes can equip various items, with four different slots: Weapon, Head, Body, and Legs. When a new hero is created, their equipment is initialized to have each slot as an entry with null values to represent empty slots. Each subclass can only equip certain weapon types, and if a hero tries to equip an item they should not be able to because of the wrong type or a level requirement that they don't meet.
 
 ## Conclusion
-This README provides a brief overview of the requirements for the Hero Select Screen Assignment.
+This README provides a brief overview of the requirements for the Hero Assignment.
